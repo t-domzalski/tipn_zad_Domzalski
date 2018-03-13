@@ -1,2 +1,2 @@
 # tipn_zad_Domzalski
-Kupa zadań
+Zadania, zajęcia numer 2
