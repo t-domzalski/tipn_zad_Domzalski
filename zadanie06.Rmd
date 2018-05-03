@@ -1,0 +1,84 @@
+---
+title: "zadanie06"
+author: "Tomasz Domżalski"
+date: "3 maja 2018"
+output:
+  html_document:
+    df_print: paged
+  theme: cerulean  
+  highlight: zenburn
+  
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# *Legion* - serial, że mój bjen
+## serio jest świetny
+W trzech słowach można powiedzieć czemu tak myślę, ponieważ jest on:
+
+* **mega**
+* **ekstra**
+* **dobry**
+
+Jest też kilka powodów, dla których mogłby być gorszy:
+
+1. nie oglądałbym go
+2. poświęciłbym więcej czasu na gotowanie smacznych obiadków
+3. poszedłbym do fryzjera
+
+#### Sami zobaczcie, jak nikczemni są w świetności tego serialu, do [dzieła](https://www.youtube.com/watch?v=4SZ3rMMYBLY)
+
+## David Haller jest najmocarniejszowski
+![David Haller](DH.jpg)
+
+## Wystarczy zerknąć na staty tego tu oto mocarza
+| powers | scale 1 - 7|
+| --- | --- |
+| intelligence | 6 |
+| speed | 7 |
+| durability | 7 |
+| energy projection | 7 |
+| fighting skills | 7 |
+| strength | 7|
+
+## Kulminacja wieczoru
+Pojedyńczą linijkę kodu `moża zacytować w taki oto sposób`
+Albo też kilka linijek o tak
+
+```
+q <- "jakas_zmienna" 
+print (q)
+``` 
+### Wykresik ze schowanymi bebechami
+
+```{r echo=FALSE}
+library(tidyverse)
+library(ggplot2)
+ggplot(data = mpg, aes(x = class, y = displ)) +
+  geom_boxplot() +
+  coord_flip() +
+  labs(title = "engine displacement for individual classes", x = "class", y = "engine displacement")
+  
+```
+
+### Wydrukowana tabela
+
+```{r}
+mpg
+```
+
+### a wrzuciłem se
+```{r}
+wehikul_szczescia <- function(obsuwa, rok_obecny, miesiac_obecny, dzien_obecny) {
+  il_h_obecnyrok <- (((12 - miesiac_obecny) * 30) - (30 - dzien_obecny)) * 24
+  il_h_naostatnimroku <- (6 * 30 * 24)
+  il_h_pomiedzy <- (2021 - rok_obecny + obsuwa) * 365 * 24
+  return(il_h_naostatnimroku + il_h_obecnyrok + il_h_pomiedzy)
+}
+wehikul_szczescia(0, 2018, 3, 12)
+
+```
+
+## Tak mi wyskakuje ten warning przy ggplot2, ale działa normalnie i jeszcze przy opcji include=FALSE nie wypluwa mi nic i nie wiem dlaczego więc dałem echo=FALSE
