@@ -4,9 +4,9 @@ author: "Tomasz Domżalski"
 date: "3 maja 2018"
 output:
   html_document:
-    df_print: paged
-  theme: cerulean  
-  highlight: zenburn
+    theme: cerulean
+    highlight: zenburn
+    dr_print: paged
   
 ---
 
@@ -81,4 +81,4 @@ wehikul_szczescia(0, 2018, 3, 12)
 
 ```
 
-## Tak mi wyskakuje ten warning przy ggplot2, ale działa normalnie i jeszcze przy opcji include=FALSE nie wypluwa mi nic i nie wiem dlaczego więc dałem echo=FALSE
+## HELP Tak mi wyskakuje ten warning przy ggplot2, ale działa normalnie i jeszcze przy opcji include=FALSE nie wypluwa mi nic i nie wiem dlaczego więc dałem echo=FALSE
