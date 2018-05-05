@@ -4,9 +4,10 @@ author: "Tomasz Domżalski"
 date: "3 maja 2018"
 output:
   html_document:
+    df_print: paged
     theme: cerulean
     highlight: zenburn
-    dr_print: paged
+    
   
 ---
 
